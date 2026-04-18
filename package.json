@@ -8,7 +8,7 @@
     "start": "node src/server.mjs"
   },
   "dependencies": {
-    "@pallattu/aeg-intent-gate": "^0.5.2"
+    "@pallattu/aeg-intent-gate": "^0.6.0"
   },
   "engines": {
     "node": ">=20"

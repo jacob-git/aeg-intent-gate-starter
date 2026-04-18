@@ -2,6 +2,7 @@ import http from "node:http";
 import { createIntentGate, createPolicy, gateOpenAIToolCall } from "@pallattu/aeg-intent-gate";
 
 const port = Number(process.env.PORT ?? 3344);
+const host = process.env.HOST ?? "127.0.0.1";
 const queue = new Map();
 
 const gate = createIntentGate({
@@ -105,8 +106,8 @@ const server = http.createServer(async (request, response) => {
   return sendJson(response, { error: "Not found." }, 404);
 });
 
-server.listen(port, () => {
-  console.log(`Starter approval app running at http://localhost:${port}`);
+server.listen(port, host, () => {
+  console.log(`Starter approval app running at http://${host}:${port}`);
 });
 
 function fakeExecute(command) {
