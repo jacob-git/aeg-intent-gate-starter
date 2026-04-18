@@ -2,6 +2,8 @@
 
 Starter app for gating AI tool calls before they reach real executors.
 
+Live demo: https://aeg-intent-gate-starter.pages.dev
+
 It shows:
 
 - OpenAI-style function calls
