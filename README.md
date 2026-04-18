@@ -31,7 +31,7 @@ This starter includes a Cloudflare Pages Functions entrypoint in `functions/[[pa
 Use these settings when connecting the GitHub repo to Cloudflare Pages:
 
 - Framework preset: `None`
-- Build command: leave blank
+- Build command: `npm ci`
 - Build output directory: `public`
 - Root directory: `/`
 

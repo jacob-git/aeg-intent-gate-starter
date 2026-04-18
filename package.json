@@ -10,7 +10,7 @@
     "pages:deploy": "npx wrangler pages deploy public --project-name aeg-intent-gate-starter"
   },
   "dependencies": {
-    "@pallattu/aeg-intent-gate": "^0.6.0"
+    "@pallattu/aeg-intent-gate": "^0.6.2"
   },
   "engines": {
     "node": ">=20"
