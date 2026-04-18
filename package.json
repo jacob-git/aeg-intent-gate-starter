@@ -1,0 +1,16 @@
+{
+  "name": "aeg-intent-gate-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Starter app for gating AI tool calls with human approval.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.mjs"
+  },
+  "dependencies": {
+    "@pallattu/aeg-intent-gate": "^0.5.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
