@@ -24,6 +24,29 @@ Open:
 http://localhost:3344
 ```
 
+## Deploy To Cloudflare Pages
+
+This starter includes a Cloudflare Pages Functions entrypoint in `functions/[[path]].js`.
+
+Use these settings when connecting the GitHub repo to Cloudflare Pages:
+
+- Framework preset: `None`
+- Build command: leave blank
+- Build output directory: `public`
+- Root directory: `/`
+
+Preview locally with Wrangler:
+
+```sh
+npm run pages:dev
+```
+
+Deploy manually:
+
+```sh
+npm run pages:deploy
+```
+
 ## Why This Exists
 
 Do not send raw model tool calls directly to application code. Gate them first, then let executors accept only approved command objects.

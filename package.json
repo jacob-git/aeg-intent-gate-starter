@@ -5,7 +5,9 @@
   "description": "Starter app for gating AI tool calls with human approval.",
   "type": "module",
   "scripts": {
-    "start": "node src/server.mjs"
+    "start": "node src/server.mjs",
+    "pages:dev": "npx wrangler pages dev public",
+    "pages:deploy": "npx wrangler pages deploy public --project-name aeg-intent-gate-starter"
   },
   "dependencies": {
     "@pallattu/aeg-intent-gate": "^0.6.0"
